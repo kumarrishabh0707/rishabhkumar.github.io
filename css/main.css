@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body{
+    background-color: #212121;
+    background-image: url(images/black-dot.png);
+
+}
+
+.monogram{
+    width: 64px;
+    height: auto;
+    padding: 16px;
+}
+
+nav{
+    background-color: #212121;
+    background-image: url(images/black-dot.png);
+    box-shadow: none;
+}
+
+nav ul li a{
+    font-weight: 600;
+}
+
+.subheadings{
+    color: white;
+    opacity: 0.4;
+}
+
+.headings{
+    line-height: 90%;
+    font-weight: 600;
+}
