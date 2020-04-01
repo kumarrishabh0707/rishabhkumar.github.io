@@ -10,8 +10,6 @@ html {
 
 body{
     background-color: #212121;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
-
 }
 
 .monogram{
@@ -22,6 +20,7 @@ body{
 
 .container{
     width: 90%;
+    padding: 0;
 }
 
 .boxdrop :hover{
@@ -31,7 +30,6 @@ body{
 
 nav{
     background-color: #212121;
-    background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
     box-shadow: none;
 }
 
@@ -51,10 +49,41 @@ nav ul li a{
 
 .paragraph{
     color: white;
+}  
+
+.arowspacing{
+    margin: .6em 0 .6em;
 }
 
+.row{
+    width: 92%;
+}
 
-
-.card2{
+.card-props{
+    overflow: hidden;
     border-radius: 25px;
+    background: linear-gradient(145deg, #232323, #1e1e1e);
+    box-shadow:  20px 20px 50px #0d0d0d, 
+                 -20px -20px 50px #353535;
+}
+.texture-back{
+    background-color: #212121;
+}
+
+.custom-shadow{
+    box-shadow: 5px 5px 10px black 0.7;
+}
+
+.card{
+    width: 40%;
+    float: left;
+    
+}
+
+.acolumns{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10%;
+    justify-content: space-between;
+    
 }
