@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 html {
-    overflow:   scroll;
+    overflow-y: scroll;
   }
   ::-webkit-scrollbar {
       width: 0px;
@@ -99,6 +99,12 @@ nav{
     box-shadow:  3px 3px 6px #161616, 
                  -3px -3px 6px #2c2c2c;
 }
+
+section{
+    display: grid;
+    grid-template-columns: 300px 300px;
+}
+
 
 /* shadow for cards */
 
