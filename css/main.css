@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
 html {
     overflow-y: scroll;
@@ -12,9 +14,19 @@ html {
 
 body{
     background-color: #212121;
+    font-family: 'Titillium Web', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+.texthover{
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.texthover:hover{
+    opacity: 1;
 }
 
 /* logo properties */
@@ -63,6 +75,7 @@ nav{
 .headings{
     line-height: 90%;
     font-weight: 600;
+    font-family: 'Arvo', serif;
 }
 
 .paragraph{
@@ -83,21 +96,38 @@ nav{
     width: 92%;
 }
 
-/* shadow for navbar icons */
+/* shadow for nav icons */
+
+.nav-props{
+    border-radius: 50%;
+    background: #212121;
+    box-shadow:  5px 5px 18px #171717, 
+                -5px -5px 18px #2b2b2b;
+    transition: .6s;
+}
+
+.nav-props:hover{
+    border-radius: 50%;
+    background: linear-gradient(145deg, #232323, #1e1e1e);
+    box-shadow:  5px 5px 18px #171717, 
+                -5px -5px 18px #2b2b2b;
+}
+
+/* shadow for company icons */
 
 .icon-props{
-    border-radius: 50%;
-    background: linear-gradient(145deg, #1e1e1e, #232323);
-    box-shadow:  3px 3px 6px #141414, 
-                -3px -3px 6px #2e2e2e;
-    transition: .3s;
+    border-radius: 25px;
+    background: #212121;
+    box-shadow:  25px 25px 51px #191919, 
+             -25px -25px 51px #292929;
+    transition: .6s;
 }
 
 .icon-props:hover{
-    border-radius: 50%;
+    border-radius: 25px;
     background: linear-gradient(145deg, #232323, #1e1e1e);
-    box-shadow:  3px 3px 6px #161616, 
-                 -3px -3px 6px #2c2c2c;
+    box-shadow:  25px 25px 51px #191919, 
+             -25px -25px 51px #292929;
 }
 
 section{
@@ -121,10 +151,22 @@ section{
 .card-props:hover{
     overflow: hidden;
     border-radius: 25px;
+    animation-name: slideup;
+    animation-duration: .8s;
+    transition: all .2s ease-in-out;
     background: linear-gradient(145deg, #232323, #1e1e1e);
     box-shadow:  22px 22px 54px #181818, 
                 -22px -22px 54px #2a2a2a;
-    transition: 0.3s;
+    transition: .6s;
+}
+
+@keyframes slideup{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(0,-10px);
+    }
 }
 
 /* for setting background color for various elements */
@@ -195,7 +237,7 @@ section{
     
   }
 
-/* responsive cards for smaller sizes*/
+/* responsive cards for larger sizes*/
   
 @media screen and (-webkit-device-pixel-ratio:3) {
     .card{
@@ -209,6 +251,24 @@ section{
 @media screen and (min-width: 600px){
     .card{
         width: 40%;
+        float: left;
+        
+    }
+
+}
+
+@media screen and (-webkit-device-pixel-ratio:3) {
+    .card{
+        width: 25%;
+        float: left;
+        
+    }
+
+}
+
+@media screen and (min-width: 1095px){
+    .card{
+        width: 25%;
         float: left;
         
     }
