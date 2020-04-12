@@ -145,28 +145,18 @@ section{
     background: #212121;
     box-shadow:  22px 22px 54px #151515, 
                 -22px -22px 54px #2d2d2d;
+    transition: 0.4s ease-in-out;
+    
 
 }
 
 .card-props:hover{
     overflow: hidden;
     border-radius: 25px;
-    animation-name: slideup;
-    animation-duration: .8s;
-    transition: all .2s ease-in-out;
     background: linear-gradient(145deg, #232323, #1e1e1e);
+    transform: translate(0,-10px);
     box-shadow:  22px 22px 54px #181818, 
                 -22px -22px 54px #2a2a2a;
-    transition: .6s;
-}
-
-@keyframes slideup{
-    from{
-        transform: translate(0,0);
-    }
-    to{
-        transform: translate(0,-10px);
-    }
 }
 
 /* for setting background color for various elements */
