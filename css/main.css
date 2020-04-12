@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
@@ -81,6 +80,11 @@ nav{
 .paragraph{
     color: white;
 }  
+
+.subtitle{
+    font-size: .8em;
+    opacity: .7;
+}
 
 /* spacing and layout settings */
 
@@ -228,28 +232,10 @@ section{
   }
 
 /* responsive cards for larger sizes*/
-  
-@media screen and (-webkit-device-pixel-ratio:3) {
-    .card{
-        width: 40%;
-        float: left;
-        
-    }
-
-}
 
 @media screen and (min-width: 600px){
     .card{
         width: 40%;
-        float: left;
-        
-    }
-
-}
-
-@media screen and (-webkit-device-pixel-ratio:3) {
-    .card{
-        width: 25%;
         float: left;
         
     }
