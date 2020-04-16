@@ -86,6 +86,10 @@ nav{
     opacity: .7;
 }
 
+.cardtext{
+    font-size: 1em;
+}
+
 /* spacing and layout settings */
 
 .rowspacing{

@@ -27,6 +27,12 @@
   </head>
 
   <body>
+
+    <div id="particles-js"></div>
+
+
+
+
     <!--Navigation Bar-->
     <header>
     <nav>
@@ -119,6 +125,18 @@
     <div class="container maincards" style="margin: 4% 0 10% 5%;">
         <div class="col s12 m4">
 
+          <div class="card card-props rowspacing">
+            <div class="card-image">
+              <img src="images/img6.jpg" alt="img6">
+              
+              <a href="https://www.behance.net/gallery/95088343/Navnirmiti-Math-Fair-2020-After-Movie" target="blank" class="btn-floating halfway-fab waves-light"><img src="images/behance.svg" alt="behanceicon"></a>
+            </div>
+            <div class="card-content texture-back paragraph">
+              <span class="subtitle">VIDEO PRODUCTION</span>
+              <span class="card-title">Math Fair 2020</span>
+              <p class="flow-text cardtext">An after-movie that we made for Navnirmiti Eduquality Foundation for the Math Fair 2020.</p>
+            </div>
+          </div>
 
           <div class="card card-props rowspacing">
             <div class="card-image">
@@ -129,7 +147,7 @@
             <div class="card-content texture-back paragraph">
               <span class="subtitle">GAME DESIGN</span>
               <span class="card-title">Wordplay</span>
-              <p>A fresh education tool to combine storytime and playtime in the context of a 3rd grade classroom in India.</p>
+              <p class="flow-text cardtext">A fresh education tool to combine storytime and playtime in the context of a 3rd grade classroom in India.</p>
             </div>
           </div>
 
@@ -142,7 +160,7 @@
             <div class="card-content texture-back paragraph">
               <span class="subtitle">PRODUCT DESIGN</span>
               <span class="card-title">Dehumidifier</span>
-              <p>A cheap dehumidifier concept which is easy to manufacture and is scalable and customisable for various workloads.</p>
+              <p class="flow-text cardtext">A cheap dehumidifier concept which is easy to manufacture and is scalable and customisable for various workloads.</p>
             </div>
           </div>
 
@@ -155,7 +173,7 @@
             <div class="card-content texture-back paragraph">
               <span class="subtitle">DATA VISUALISATION</span>
               <span class="card-title">Journey Mapping</span>
-              <p>I undertook a journey and tried to illustrate and highlights its qualitative and quantitative datapoints.</p>
+              <p class="flow-text cardtext">I undertook a journey and tried to illustrate and highlights its qualitative and quantitative datapoints.</p>
             </div>
           </div>
 
@@ -168,7 +186,7 @@
             <div class="card-content texture-back paragraph">
               <span class="subtitle">PRODUCT DESIGN</span>
               <span class="card-title">Ektara</span>
-              <p>An attempt to recreate the classic rustic instrument with some minor changes and creative inputs.</p>
+              <p class="flow-text cardtext">An attempt to recreate the classic rustic instrument with some minor changes and creative inputs.</p>
             </div>
           </div>
 
@@ -181,7 +199,7 @@
             <div class="card-content texture-back paragraph">
               <span class="subtitle">NARRATIVE</span>
               <span class="card-title">The Metro Project</span>
-              <p>An attempt to document the turmoil the city is going through due to the metro construction through illustrations and photographs.</p>
+              <p class="flow-text cardtext">An attempt to document the turmoil the city is going through due to the metro construction.</p>
             </div>
           </div>
 
@@ -195,7 +213,7 @@
   
   <!--Footer-->
 
-  <div class="page-footer texture-back left-align" style="margin: 3% 0 1% 6%;">
+  <div class="page-footer texture-back center-align" style="margin: 3% 0 1% 6%;">
     Made with
            <span class="heart">&hearts;</span>
            in Lucknow
@@ -208,6 +226,9 @@
     <!--JavaScript at end of body for optimized loading-->
     <script src="js/materialize.min.js"></script>
 
+    <!--JavaScript for background particles-->
+    <script src="https://www.jsdelivr.com/package/npm/particles.js"></script>
+
     <script>
       $(document).ready(function(){
 
@@ -216,6 +237,11 @@
       })
     </script>
 
-  
+    <script>
+      particlesJS.load('particles-js', 'assets/particles.json', function() {
+      console.log('callback - particles-js config loaded');
+      });
+    </script>
+    
   </body>
 </html>
