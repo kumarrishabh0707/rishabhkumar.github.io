@@ -167,8 +167,8 @@ section{
     border-radius: 25px;
     background: linear-gradient(145deg, #232323, #1e1e1e);
     transform: translate(0,-10px);
-    /*box-shadow:  22px 22px 54px #181818, 
-                -22px -22px 54px #2a2a2a;*/
+    box-shadow:  22px 22px 54px #181818, 
+                -22px -22px 54px #2a2a2a;
                 border: solid #ffa000 1px; 
 }
 
